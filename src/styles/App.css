@@ -1,18 +1,45 @@
 .container {
     background: #ECF2F8;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .card {
-    width: 1110px;
-    height: 572px;
     display: grid;
     grid-template-columns: 255px 255px 255px 255px;
     grid-template-rows: 282px 266px;
-    column-gap: 30px;
-    row-gap: 24px;
+    grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+    gap: 24px 30px;
+    padding: 24px;
+}
+
+@media (max-width: 1110px) {
+    .card {
+        grid-template-columns: 255px 255px 255px;
+        grid-template-rows: 282px 266px 266px;
+        gap: 12px 15px;
+        grid-template-areas: 
+        "daniel daniel jonathan"
+        "jeanette patrick patrick"
+        "kira kira kira";
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        grid-template-columns: 327px;
+        grid-template-rows: 444px 240px 222px 384px 438px;
+        row-gap: 24px;
+        grid-template-areas: 
+        "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "kira";
+    }
 }

@@ -3,10 +3,7 @@ import { ReactComponent as Quote } from './assets/bg-pattern-quotation.svg'
 import './styles/Testimonial.css'
 
 function Testimonial({
-    rowStart,
-    rowEnd,
-    colStart,
-    colEnd,
+    gridArea,
     image,
     name,
     verifiedGraduate,
@@ -18,19 +15,11 @@ function Testimonial({
     textColor = '#FFFFFF',
     borderColor = '',
     haveQuote = false,
-    
 }) {
     const inlineStyle = {
-        gridRow: `${rowStart} / ${rowEnd}`,
-        gridColumn: `${colStart} / ${colEnd}`,
+        gridArea,
         backgroundColor: backgroundColor
     }
-
-    if (!colStart || !colEnd)
-        delete inlineStyle['gridColumn']
-
-    if (!rowStart || !rowEnd)
-        delete inlineStyle['gridRow']
 
     return (
         <div className="testimonial" style={inlineStyle}>

@@ -17,8 +17,7 @@ const testimonials = [
     The next 12 weeks was the best - and most grueling - time of my life. Since completing 
     the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”`,
     image: DanielImage,
-    colStart: 1,
-    colEnd: 3,
+    gridArea: 'daniel',
     backgroundColor: 'hsl(263, 55%, 52%)',
     textColor: '#CFCFCF',
     borderColor: '#A775F1',
@@ -31,8 +30,7 @@ const testimonials = [
     text: `“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
     for a big company. This was one of the best investments I’ve made in myself. ”`,
     image: JonathanImage,
-    colStart: 3,
-    colEnd: 4,
+    gridArea: 'jonathan',
     backgroundColor: 'hsl(217, 19%, 35%)'
   },
 
@@ -43,8 +41,7 @@ const testimonials = [
     text: `“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
     while doing something I love. ”`,
     image: JeanetteImage,
-    rowStart: 2,
-    rowEnd: 3,
+    gridArea: 'jeanette',
     nameColor: '#48556A',
     titleColor: '#48556A',
     textColor: '#48556A',
@@ -58,10 +55,7 @@ const testimonials = [
     junior developer. The standard is above the rest. You will get the personal attention you need from 
     an incredible community of smart and amazing people. ”`,
     image: PatrickImage,
-    rowStart: 2,
-    rowEnd: 3,
-    colStart: 2,
-    colEnd: 4,
+    gridArea: 'patrick',
     backgroundColor: 'hsl(219, 29%, 14%)',
     titleColor: '#ECF2F8',
     borderColor: '#733FC8'
@@ -79,8 +73,7 @@ const testimonials = [
     experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
     100% recommend! ”`,
     image: KiraImage,
-    rowStart: 1,
-    rowEnd: 3,
+    gridArea: 'kira',
     nameColor: '#48556A',
     titleColor: '#48556A',
     textColor: '#48556A',

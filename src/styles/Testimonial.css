@@ -54,3 +54,12 @@
     line-height: 18px;
     opacity: 70%;
 }
+
+@media (max-width: 800px) {
+    .testimonial__quote {
+        right: 24px;
+        top: 0px;
+        z-index: -1;
+    }
+    
+}
