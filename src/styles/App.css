@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .card {
@@ -42,4 +43,8 @@
         "patrick"
         "kira";
     }
+}
+
+.attribution {
+    padding-bottom: 10px;
 }
