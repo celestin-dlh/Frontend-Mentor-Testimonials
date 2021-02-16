@@ -3,7 +3,6 @@
     border-radius: 8px;
     padding: 32px;
     padding-top: 26px;
-    background-color: purple;
     position: relative;
     z-index: 1;
 }
@@ -37,7 +36,7 @@
 }
 
 .testimonial__identity__graduated {
-    opacity: 50%;
+    opacity: 0.5;
     font-size: 11px;
 }
 
@@ -52,7 +51,7 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 18px;
-    opacity: 70%;
+    opacity: 0.7;
 }
 
 @media (max-width: 800px) {
